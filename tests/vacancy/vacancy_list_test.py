@@ -30,22 +30,22 @@ def test_vacancy_list(client):
 #
 
 
-# @pytest.mark.django_db
-# def test_vacancy_list(client):
-#
-#     expected_response = {
-#     "id": 1,
-#     "location": "Москва, м. Студенческая",
-#     "first_name": "Павел",
-#     "last_name": "Никифоров",
-#     "username": "pnikifirov",
-#     "password": "gZvptL",
-#     "role": "member",
-#     "age": 21
-# }
-#
-#     response = client.get("/use/1/")
-#
-#     assert response.data == expected_response
-#     assert response.status_code == 404
-#
+@pytest.mark.django_db
+def test_vacancy_list(client):
+
+    expected_response = {
+    "id": 1,
+    "location": "Москва, м. Студенческая",
+    "first_name": "Павел",
+    "last_name": "Никифоров",
+    "username": "pnikifirov",
+    "password": "gZvptL",
+    "role": "member",
+    "age": 21
+}
+
+    response = client.get("/use/1/")
+
+    assert response.data == expected_response
+    assert response.status_code == 404
+
