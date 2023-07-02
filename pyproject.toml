@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "drf"
+version = "0.1.0"
+description = ""
+authors = ["aleksandrchekalin <alexandrcekalin082@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.2"
+djangorestframework = "^3.14.0"
+psycopg2-binary = "^2.9.6"
+pillow = "^9.5.0"
+djangorestframework-simplejwt = "^5.2.2"
+pytest-django = "^4.5.2"
+pytest-factoryboy = "^2.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
